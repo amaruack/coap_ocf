@@ -16,7 +16,7 @@ public class TestCoapClient {
 
         //        CoapClient client = new CoapClient("coap://californium.eclipse.org:5683/obs");
         CoapClient client = new CoapClient("coap://10.10.0.198:5683/oic/res");
-        client.setTimeout(3L);
+//        client.setTimeout(3L);
 
 //        if(!client.ping()){
 //            System.out.println("Server is down. Terminate program.");
