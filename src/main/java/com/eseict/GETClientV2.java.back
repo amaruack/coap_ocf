@@ -42,7 +42,7 @@ public class GETClient {
 
 		URI uri = null; // URI parameter of the request
 
-		args = new String[]{"coap://10.10.0.198:5683/oic/res"};
+		args = new String[]{"coap://10.10.0.198:5683/oic/res?rt=oic.r.switch.binary"};
 
 		if (args.length > 0) {
 
@@ -55,7 +55,7 @@ public class GETClient {
 			}
 
 			CoapClient client = new CoapClient(uri);
-
+			client.setTimeout(3000L);
 			CoapResponse response = null;
 			try {
 				response = client.get();
